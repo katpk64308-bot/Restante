@@ -10,26 +10,22 @@
     text-decoration: none;
     list-style: none;
 }
-html,
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-    overscroll-behavior: none;
-}
 html {
     background: #100000;
     overscroll-behavior: none;
 }
+
 body {
     background: linear-gradient(370deg, #ff0101, #350c0c, #000000);
-    overscroll-behavior: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
+    background-attachment: scroll;
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
     text-align: center;
+    overscroll-behavior: none;
 }
 
 .spaso {
@@ -185,9 +181,8 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    height: 100%;
     width: 100%;
+    min-height: 100%;
     justify-content: space-between;
     margin-right: 30px;
     color: rgb(255, 255, 255);
