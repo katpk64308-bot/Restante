@@ -116,14 +116,14 @@
  .social-icons {
      display: inline;
  }
-.social-container{
-    margin-left: 55px;
+ .social-container{
+    margin-left: 0;
 }
 
  .fundo3 {
      display: grid;
-     width: 100vw;
-     margin-left: calc(50% - 50vw);
+     width: 100%;
+     margin-left: 0;
      grid-template-columns: 108px minmax(0, 1fr);
      grid-template-rows: auto auto;
      align-items: center;
