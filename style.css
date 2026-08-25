@@ -10,9 +10,13 @@
     text-decoration: none;
     list-style: none;
 }
-
+html {
+    background: #100000;
+    overscroll-behavior: none;
+}
 body {
     background: linear-gradient(370deg, #ff0101, #350c0c, #000000);
+    overscroll-behavior: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
