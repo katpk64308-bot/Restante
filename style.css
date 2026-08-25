@@ -1,0 +1,279 @@
+@font-face {
+    font-family: Asin;
+    src: url("./fonts/Miracle\ History.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: linear-gradient(155deg,#fff,  #f18c8c, #ff0000 65%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    text-align: center;
+}
+.spaso{
+    background: black;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin-right: 30px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+ul{
+    font-size: 20px;
+    margin-top: 15px;
+}
+li{
+    margin-right: 20px;
+}
+li:hover{
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+img{
+    height: 15vh;
+    z-index: 3;
+}
+.cardapio{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cards-cardapio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.item-card {
+    width: 150px;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #e9e0e0;
+    border-radius: 6px;
+    color: #000;
+}
+
+.item-card .cardapio {
+    display: block;
+    width: 100%;
+    height: 120px;
+    
+}
+
+.item-card p {
+
+    padding-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.spaso > .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    top: 1px;
+}
+
+h1.logo {
+    font-family: Asin;
+    font-size: 38px;
+    white-space: nowrap;
+    margin-left: 15rem;
+    color: #fff;
+}
+span{
+    color: #ff0000;
+}
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10rem;
+}
+.fundo2{
+    background: #ffe2f9;
+}
+.fundo{
+    position: relative;
+    min-height: 520px;
+    padding: 160px 8% 10rem;
+    background-image: url("img/fundo1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Fundo circular no lado esquerdo da imagem */
+.fundo::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 840px;
+    height: 840px;
+    left: -190px;
+    top: 35%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: linear-gradient(155deg, #000000 30%, #000000f1, #000000cb);
+    box-shadow: #000000 0px 0px 2px;
+}
+
+.fundo h2,
+.fundo h3,
+.fundo p{
+    position: relative;
+    z-index: 1;
+}
+/* Ajustes para celular e telas estreitas */
+@media (max-width: 768px) {
+    html,
+    body {
+        min-width: 0;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .spaso {
+        align-items: center;
+        gap: 12px;
+        margin-right: 0;
+        padding: 8px 12px;
+    }
+
+    .spaso > .logo {
+        min-width: 0;
+        gap: 6px;
+    }
+
+    .logo img {
+        position: static;
+        flex: 0 0 auto;
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+    }
+
+    .logo-texto {
+        min-width: 0;
+        margin-left: 0;
+    }
+
+    .logo-texto h1 {
+        font-size: 25px;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .logo-texto p {
+        font-size: 9px;
+        white-space: nowrap;
+    }
+
+    .logo-texto p span {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 10px;
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    nav li,
+    nav li:hover {
+        margin: 0;
+        font-size: inherit;
+    }
+
+    .fundo {
+        min-height: 250px;
+        padding: 45px 24px 10px;
+        background-position: 62% center;
+    }
+
+    .fundo::before {
+        width: 560px;
+        height: 560px;
+        left: -300px;
+        top: 50%;
+    }
+
+    .fundo h2 {
+        font-size: 27px;
+        line-height: 1.1;
+    }
+
+    .fundo p {
+        width: 215px;
+        max-width: 100%;
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .fundo p br {
+        display: none;
+    }
+
+    body > h1 {
+        margin: 25px 0 15px;
+        font-size: 28px;
+    }
+
+    .cards-cardapio {
+        gap: 10px;
+        padding: 0 12px;
+    }
+
+    .item-card {
+        border: 3px rgb(0, 0, 0);
+        border-radius: 2px;
+        width: calc(50% - 5px);
+        padding: 6px;
+    }
+
+    .cardapio {
+        display: block;
+        width: 60%;
+        height: 85px;
+        border-radius: 6px;
+        object-fit: cover;
+    }
+
+    body > br {
+        display: none;
+    }
+
+    .redis {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 16px 25px;
+    }
+}
