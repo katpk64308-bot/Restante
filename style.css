@@ -12,7 +12,6 @@
 }
 html {
     background: #100000;
-    overscroll-behavior: none;
 }
 
 body {
@@ -175,16 +174,12 @@ span {
     position: relative;
     z-index: 1;
 }
-
 .fundo3 {
     background: linear-gradient(155deg, #ff0101, #350c0c, #000000);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 100%;
-    justify-content: space-between;
-    margin-right: 30px;
     color: rgb(255, 255, 255);
     padding: 10px;
 }
