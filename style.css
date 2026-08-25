@@ -23,6 +23,10 @@ body {
     background-attachment: scroll;
     min-height: 100vh;
     text-align: center;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
 }
 
 .spaso {
@@ -99,7 +103,7 @@ img {
     font-weight: bold;
 }
 
-.spaso > .logo {
+.spaso>.logo {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -168,12 +172,19 @@ span {
     position: relative;
     z-index: 2;
 }
+
 .fundo3 {
-    background: linear-gradient(155deg, #ff0101, #350c0c, #000000);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     width: 100%;
     color: rgb(255, 255, 255);
     padding: 10px;
+}
+
+.fundo-contato {
+    margin-top: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: #e9e0e0;
+    padding-bottom: 2rem;
 }
