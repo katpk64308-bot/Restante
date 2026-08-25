@@ -1,12 +1,5 @@
 @media (max-width: 768px) {
 
-    html,
-    body {
-        min-width: 0;
-        height: auto;
-        overflow-x: hidden;
-    }
-
     .spaso {
         align-items: center;
         gap: 12px;
