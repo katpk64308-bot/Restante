@@ -148,4 +148,4 @@ function navegar(aba) {
     document.getElementById("conteudo").innerHTML = pagina[aba]
 }
 
-navegar('contato')
+navegar('home')
