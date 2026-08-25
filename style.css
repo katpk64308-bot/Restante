@@ -158,7 +158,6 @@ span {
     transform: translateY(-50%);
     border-radius: 50%;
     background: linear-gradient(155deg, #000000 30%, #000000f1, #000000cb);
-    box-shadow: #000000 0px 0px 2px;
 }
 
 .fundo h2,
