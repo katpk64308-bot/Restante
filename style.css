@@ -144,6 +144,8 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     color: #ffffff;
+    z-index: 1;
+    overflow: hidden;
     text-align: left;
 }
 
@@ -164,9 +166,8 @@ span {
 .fundo h3,
 .fundo p {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
-
 .fundo3 {
     background: linear-gradient(155deg, #ff0101, #350c0c, #000000);
     background-repeat: no-repeat;
