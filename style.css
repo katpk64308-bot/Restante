@@ -1,17 +1,18 @@
 @font-face {
     font-family: Asin;
-    src: url("./fonts/Miracle\ History.ttf");
+    src: url('fonts/Miracle\ History.ttf');
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-body{
-    background: linear-gradient(155deg,#fff,  #f18c8c, #ff0000 65%);
+
+body {
+    background: linear-gradient(370deg, #ff0101, #350c0c, #000000);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -19,7 +20,8 @@ body{
     height: 100vh;
     text-align: center;
 }
-.spaso{
+
+.spaso {
     background: black;
     width: 100%;
     justify-content: space-between;
@@ -28,25 +30,38 @@ body{
     color: rgb(255, 255, 255);
     padding: 10px;
 }
-ul{
+
+.card {
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    color: #000;
+    text-align: left;
+}
+
+ul {
     font-size: 20px;
     margin-top: 15px;
 }
-li{
+
+li {
     margin-right: 20px;
 }
-li:hover{
+
+li:hover {
     margin-top: 5px;
     margin-right: 10px;
     font-size: 25px;
     cursor: pointer;
 }
 
-img{
+img {
     height: 15vh;
     z-index: 3;
 }
-.cardapio{
+
+.cardapio {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -72,7 +87,7 @@ img{
     display: block;
     width: 100%;
     height: 120px;
-    
+
 }
 
 .item-card p {
@@ -80,10 +95,10 @@ img{
     padding-top: 8px;
     font-size: 16px;
     font-weight: bold;
-    
+
 }
 
-.spaso > .logo {
+.spaso>.logo {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -103,19 +118,23 @@ h1.logo {
     margin-left: 15rem;
     color: #fff;
 }
-span{
+
+span {
     color: #ff0000;
 }
+
 .logo-texto {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 10rem;
 }
-.fundo2{
+
+.fundo2 {
     background: #ffe2f9;
 }
-.fundo{
+
+.fundo {
     position: relative;
     min-height: 520px;
     padding: 160px 8% 10rem;
@@ -129,7 +148,7 @@ span{
 }
 
 /* Fundo circular no lado esquerdo da imagem */
-.fundo::before{
+.fundo::before {
     content: "";
     position: absolute;
     z-index: 0;
@@ -145,135 +164,21 @@ span{
 
 .fundo h2,
 .fundo h3,
-.fundo p{
+.fundo p {
     position: relative;
     z-index: 1;
 }
-/* Ajustes para celular e telas estreitas */
-@media (max-width: 768px) {
-    html,
-    body {
-        min-width: 0;
-        height: auto;
-        overflow-x: hidden;
-    }
 
-    .spaso {
-        align-items: center;
-        gap: 12px;
-        margin-right: 0;
-        padding: 8px 12px;
-    }
-
-    .spaso > .logo {
-        min-width: 0;
-        gap: 6px;
-    }
-
-    .logo img {
-        position: static;
-        flex: 0 0 auto;
-        width: 58px;
-        height: 58px;
-        object-fit: contain;
-    }
-
-    .logo-texto {
-        min-width: 0;
-        margin-left: 0;
-    }
-
-    .logo-texto h1 {
-        font-size: 25px;
-        line-height: 1;
-        white-space: nowrap;
-    }
-
-    .logo-texto p {
-        font-size: 9px;
-        white-space: nowrap;
-    }
-
-    .logo-texto p span {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-        gap: 10px;
-        margin-top: 0;
-        font-size: 15px;
-    }
-
-    nav li,
-    nav li:hover {
-        margin: 0;
-        font-size: inherit;
-    }
-
-    .fundo {
-        min-height: 250px;
-        padding: 45px 24px 10px;
-        background-position: 62% center;
-    }
-
-    .fundo::before {
-        width: 560px;
-        height: 560px;
-        left: -300px;
-        top: 50%;
-    }
-
-    .fundo h2 {
-        font-size: 27px;
-        line-height: 1.1;
-    }
-
-    .fundo p {
-        width: 215px;
-        max-width: 100%;
-        margin-top: 18px;
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .fundo p br {
-        display: none;
-    }
-
-    body > h1 {
-        margin: 25px 0 15px;
-        font-size: 28px;
-    }
-
-    .cards-cardapio {
-        gap: 10px;
-        padding: 0 12px;
-    }
-
-    .item-card {
-        border: 3px rgb(0, 0, 0);
-        border-radius: 2px;
-        width: calc(50% - 5px);
-        padding: 6px;
-    }
-
-    .cardapio {
-        display: block;
-        width: 60%;
-        height: 85px;
-        border-radius: 6px;
-        object-fit: cover;
-    }
-
-    body > br {
-        display: none;
-    }
-
-    .redis {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 0 16px 25px;
-    }
+.fundo3 {
+    background: linear-gradient(155deg, #ff0101, #350c0c, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    margin-right: 30px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
 }

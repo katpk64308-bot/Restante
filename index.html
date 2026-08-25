@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Nova fonte estilo pincel japonês -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemidia.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+
     <title>Sakura Nami</title>
 </head>
 
+<style>
+    .social-container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
 
+    /* Estilos base dos ícones */
+    .icon-link svg {
+      width: 40px;
+      height: 40px;
+      fill: #555555; /* Cor cinza padrão para todos */
+      transition: fill 0.3s ease, transform 0.2s ease;
+    }
+
+    /* Efeito de aumentar levemente ao passar o mouse */
+    .icon-link:hover svg {
+      transform: scale(1.1);
+    }
+
+    /* Cores oficiais de cada marca no Hover */
+    .tiktok:hover svg { fill: #ffffff; }
+    .instagram:hover svg { fill: #E1306C; }
+    .facebook:hover svg { fill: #1877F2; }
+    .youtube:hover svg { fill: #FF0000; }
+</style>
 <body>
     <div class="spaso">
-<div class="logo">
-    <img src="img/logo.png">
+        <div class="logo">
+            <img src="img/logo.png">
 
-    <div class="logo-texto">
-        <h1>Sakura<span> Nami</span></h1>
-        <p><span>------ </span>Restaurante japonês<span> ------</span></p>
+            <div class="logo-texto">
+                <h1>Sakura<span> Nami</span></h1>
+                <p><span>------ </span>Restaurante japonês<span> ------</span></p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li onclick="navegar('home')" id="aba-home" style="display: inline;">Inicio</li>
+                <li onclick="navegar('contato')" id="aba-contato" style="display: inline;">Contato</li>
+            </ul>
+        </nav>
     </div>
-</div>
-    <nav>
-        <ul>
-            <li onclick="navegar('home')" id="aba-home" style="display: inline;">Inicio</li>
-            <li onclick="navegar('contato')" id="aba-contato" style="display: inline;">Contato</li>
-        </ul>
-    </nav>
-</div>
-<div class="fundo">
-    <h2>Sinta o verdadeiro</h2>
-    <h2 style="color: red;">sabor do Japão</h2>
-    <p>No Sakura Nami, cada detalhe é pensado para propocionar <br> 
-        uma experiência única, unindo tradição, qualidade e o
-        <br> melhor da gastronomia japonesa.</p>
-</div>
-<div class="fundo2">
-<h1>Cardapio</h1>
-
-<div class="cards-cardapio">
-    <div class="item-card">
-        <img class="cardapio" src="img/images (1).jpg" alt="Tradição e qualidade">
-        <p>Tradição e qualidade</p>
-    </div>
-    <div class="item-card">
-        <img class="cardapio" src="img/images.jpg" alt="Ingredientes selecionados">
-        <p>ingredientes <br>Selecionados</p>
-    </div>
-</div>
-</div>
-<h1>Contatos</h1>
-<div class="fundo3">
-<div class="redis">
-    <div class="">a</div>
-    <div class="">a</div>
-    <div class="">a</div>
-    <div class="">a</div>
-</div>
-</div>
-<div id="conteudo"></div>
+   
+    <div id="conteudo"></div>
     <script src="script.js"></script>
 </body>
+
 </html>

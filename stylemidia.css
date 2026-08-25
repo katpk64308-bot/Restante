@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+
+    html,
+    body {
+        min-width: 0;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .spaso {
+        align-items: center;
+        gap: 12px;
+        margin-right: 0;
+        padding: 8px 12px;
+    }
+
+    .spaso>.logo {
+        min-width: 0;
+        gap: 6px;
+    }
+
+    .logo img {
+        position: static;
+        flex: 0 0 auto;
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+    }
+
+    .logo-texto {
+        min-width: 0;
+        margin-left: 0;
+    }
+
+    .logo-texto h1 {
+        font-size: 25px;
+        line-height: 1;
+        white-space: nowrap;
+    }
+
+    .logo-texto p {
+        font-size: 9px;
+        white-space: nowrap;
+    }
+
+    .logo-texto p span {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 10px;
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    nav li,
+    nav li:hover {
+        margin: 0;
+        font-size: inherit;
+    }
+
+    .fundo {
+        min-height: 250px;
+        padding: 45px 24px 10px;
+        background-position: 62% center;
+    }
+
+    .fundo::before {
+        width: 560px;
+        height: 560px;
+        left: -300px;
+        top: 50%;
+    }
+
+    .fundo h2 {
+        font-size: 22px;
+        line-height: 1.1;
+    }
+
+    .fundo p {
+        width: 215px;
+        max-width: 100%;
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .fundo p br {
+        display: none;
+    }
+
+    body>h1 {
+        margin: 25px 0 15px;
+        font-size: 28px;
+    }
+
+    .cards-cardapio {
+        gap: 10px;
+        padding: 0 12px;
+    }
+
+    .item-card {
+        border: 3px rgb(0, 0, 0);
+        border-radius: 2px;
+        width: calc(50% - 5px);
+        padding: 6px;
+    }
+
+    .cardapio {
+        display: block;
+        width: 60%;
+        height: 85px;
+        border-radius: 6px;
+        object-fit: cover;
+    }
+
+    body>br {
+        display: none;
+    }
+
+    .social-icons {
+        display: inline;
+    }
+}
