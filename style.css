@@ -10,6 +10,13 @@
     text-decoration: none;
     list-style: none;
 }
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overscroll-behavior: none;
+}
 html {
     background: #100000;
     overscroll-behavior: none;
